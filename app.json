@@ -31,7 +31,8 @@
       "description": "Planning repas, sport et courses pour atteindre tes objectifs.",
       "themeColor": "#FF6B35",
       "backgroundColor": "#0F1117",
-      "bundler": "metro"
+      "bundler": "metro",
+      "baseUrl": "/summer-body-goal"
     },
     "plugins": [
       "expo-font",
