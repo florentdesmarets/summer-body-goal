@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Summer Body Goal",
+    "slug": "summer-body-goal",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F1117"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "edgeToEdgeEnabled": false,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.summerbodygoal"
+    },
+    "web": {
+      "favicon": "./assets/icon.png",
+      "name": "Summer Body Goal",
+      "shortName": "SBG",
+      "description": "Planning repas, sport et courses pour atteindre tes objectifs.",
+      "themeColor": "#FF6B35",
+      "backgroundColor": "#0F1117",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Autoriser Summer Body Goal à accéder au podomètre pour compter vos pas."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8faad1f9-199c-43a2-bac3-eb83e9741371"
+      }
+    },
+    "owner": "florentdesmarets"
+  }
+}
