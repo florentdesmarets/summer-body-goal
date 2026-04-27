@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Ionicons } from '@expo/vector-icons';
 import { StatusBar as RNStatusBar } from 'react-native';
 import { colors } from './src/theme';
+import PWAInstallBanner from './src/components/PWAInstallBanner';
 
 import MealsScreen from './src/screens/Meals/MealsScreen';
 import RecipeScreen from './src/screens/Recipe/RecipeScreen';
@@ -77,6 +78,7 @@ export default function App() {
     <SafeAreaProvider>
       <NavigationContainer>
         <StatusBar style="light" />
+        <PWAInstallBanner />
         <Stack.Navigator
           screenOptions={{
             headerShown: false,
