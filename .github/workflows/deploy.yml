@@ -31,6 +31,9 @@ jobs:
 
       - name: Build web
         run: npx expo export --platform web
+        env:
+          EXPO_PUBLIC_SUPABASE_URL: https://xdnhkmcsgvpymhlqbqhd.supabase.co
+          EXPO_PUBLIC_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhkbmhrbWNzZ3ZweW1obHFicWhkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyMDQ2OTQsImV4cCI6MjA5Mjc4MDY5NH0.PL3eeeeLOv4OErYs4iZEPwbEWH0aPmVU-Pw81vg1R5c
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
